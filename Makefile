@@ -34,6 +34,7 @@ clean:
 	rm -f HelloTriangle *.o
 	make -C Vulkan clean
 	make -C File clean
+	make -C shaders clean
 
 run:
 	./HelloTriangle
