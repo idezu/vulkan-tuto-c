@@ -30,13 +30,12 @@
  */
 #define error( str, ...) __err_log("Error",COLOR_RED,str __VA_OPT__(,) __VA_ARGS__)
 
-
-const int validationLayersCount = 4;
-
 const char* validationLayers[] = {
     "VK_LAYER_KHRONOS_validation",
     "VK_LAYER_LUNARG_api_dump",
 };
+
+const int validationLayersCount = sizeof(validationLayers)/sizeof(validationLayers[0]);
 
 void getValidationLayers(int* const count,const char*** layers)
 	{

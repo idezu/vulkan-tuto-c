@@ -1,16 +1,22 @@
 CC?=gcc
 
-CFLAGS = -std=gnu2x -Ofast -Wall -Wextra  -pedantic -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wcast-qual -Wstrict-overflow=5 -Wno-unused-variable -Wno-unused-parameter -Werror -Wformat=2 -D_FORTIFY_SOURCE=3
-LDFLAGS = -lglfw -lvulkan -I../include -I../
+CFLAGS = -D_FORTIFY_SOURCE=3
+CPPFLAGS = -I../include -I../
+
+OBJ=instance.o extension.o device.o queue.o surface.o swapchain.o imageview.o graphicspipeline.o shadermodule.o \
+ renderpass.o framebuffer.o commandpool.o commandbuffer.o sync.o buffer.o texture.o image.o objloader.o model.o
 
 all: Error vulkan.a
-	${AR} rcs vulkan.a  instance.o extension.o device.o queue.o surface.o swapchain.o imageview.o graphicspipeline.o shadermodule.o
+	${AR} rcs vulkan.a ${OBJ} 
+vulkan.a: ${OBJ}
 
-vulkan.a: instance.o extension.o device.o queue.o surface.o swapchain.o imageview.o graphicspipeline.o shadermodule.o
-
+image.o: image.c
+	${CC} -c $(CFLAGS) $? -o $@ ${EXTRAFLAGS} -I../include
+objloader.o: objloader.c
+	${CC} -c $(CFLAGS) $? -o $@ ${EXTRAFLAGS} -I../include
 
 %.o: %.c
-	${CC} -c $(CFLAGS) $? -o $@ $(LDFLAGS) ${EXTRAFLAGS}
+	${CC} -c $(CFLAGS) $? -o $@ $(CPPFLAGS) ${EXTRAFLAGS} ${WARNINGS}
 
 .PHONY: clean Error
 
