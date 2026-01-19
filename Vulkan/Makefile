@@ -1,6 +1,6 @@
 CC?=gcc
 
-CFLAGS = -D_FORTIFY_SOURCE=3
+#CFLAGS = -D_FORTIFY_SOURCE=3
 CPPFLAGS = -I../include -I../
 
 OBJ=instance.o extension.o device.o queue.o surface.o swapchain.o imageview.o graphicspipeline.o shadermodule.o \

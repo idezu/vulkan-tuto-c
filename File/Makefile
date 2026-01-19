@@ -1,6 +1,6 @@
 CC?=gcc
 
-CFLAGS = -D_FORTIFY_SOURCE=3
+#CFLAGS = -D_FORTIFY_SOURCE=3
 CPPFLAGS = -I../include -I../
 
 all: file.a

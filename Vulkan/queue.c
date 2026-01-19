@@ -4,43 +4,55 @@
 
 #include "queue.h"
 
-QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device, VkSurfaceKHR surface)
-	{
-		QueueFamilyIndices indices = {
-			QUEUE_FAMILY_EMPTY,
-			QUEUE_FAMILY_EMPTY
-		};
+QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device,
+                                     VkSurfaceKHR surface) {
+  QueueFamilyIndices indices = {QUEUE_FAMILY_EMPTY, QUEUE_FAMILY_EMPTY};
 
-		uint32_t queueFamilyCount = 0;
-		vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount, NULL);
+  uint32_t queueFamilyCount = 0;
+  vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount, NULL);
 
-		VkQueueFamilyProperties*  queueFamilies = malloc(queueFamilyCount*sizeof(VkQueueFamilyProperties));
+  VkQueueFamilyProperties *queueFamilies =
+      malloc(queueFamilyCount * sizeof(VkQueueFamilyProperties));
 
-		vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount, queueFamilies);
+  vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount,
+                                           queueFamilies);
 
-		for (size_t i = 0; i < queueFamilyCount; i++)
-			{
-				if (queueFamilies[i].queueFlags & VK_QUEUE_GRAPHICS_BIT && indices.graphicsFamily == QUEUE_FAMILY_EMPTY)
-					{
-						indices.graphicsFamily = i;
-					}
-				VkBool32 presentSupport = false;
-				vkGetPhysicalDeviceSurfaceSupportKHR(device, i, surface, &presentSupport);
-				if (presentSupport && indices.graphicsFamily != i && indices.presentFamily == QUEUE_FAMILY_EMPTY)
-					{
-						indices.presentFamily = i;
-					}
-				
-				if (isQueueComplete(indices))
-					{
-						break;
-					}
-			}
-		free(queueFamilies);
-		return indices;
-	}
+  for (size_t i = 0; i < queueFamilyCount; i++) {
+    if (queueFamilies[i].queueFlags & VK_QUEUE_GRAPHICS_BIT &&
+        indices.graphicsFamily == QUEUE_FAMILY_EMPTY) {
+      indices.graphicsFamily = i;
+    }
+    VkBool32 presentSupport = false;
+    vkGetPhysicalDeviceSurfaceSupportKHR(device, i, surface, &presentSupport);
+    if (presentSupport && indices.graphicsFamily != i &&
+        indices.presentFamily == QUEUE_FAMILY_EMPTY) {
+      indices.presentFamily = i;
+    }
 
-bool isQueueComplete(QueueFamilyIndices indices)
-	{
-		return indices.graphicsFamily != QUEUE_FAMILY_EMPTY && indices.presentFamily != QUEUE_FAMILY_EMPTY;
-	}
+    if (isQueueComplete(indices)) {
+      break;
+    }
+  }
+  if (indices.presentFamily != QUEUE_FAMILY_EMPTY &&
+      queueFamilies[indices.presentFamily].queueFlags & VK_QUEUE_GRAPHICS_BIT &&
+      indices.graphicsFamily == QUEUE_FAMILY_EMPTY) {
+    indices.graphicsFamily = indices.presentFamily;
+  }
+  if (indices.graphicsFamily != QUEUE_FAMILY_EMPTY &&
+      indices.presentFamily == QUEUE_FAMILY_EMPTY) {
+    VkBool32 presentSupport = false;
+    vkGetPhysicalDeviceSurfaceSupportKHR(device, indices.graphicsFamily,
+                                         surface, &presentSupport);
+    if (presentSupport) {
+      indices.presentFamily = indices.graphicsFamily;
+    }
+  }
+
+  free(queueFamilies);
+  return indices;
+}
+
+bool isQueueComplete(QueueFamilyIndices indices) {
+  return indices.graphicsFamily != QUEUE_FAMILY_EMPTY &&
+         indices.presentFamily != QUEUE_FAMILY_EMPTY;
+}

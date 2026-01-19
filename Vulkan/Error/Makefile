@@ -1,6 +1,6 @@
 CC?=gcc
 
-CFLAGS = -std=gnu2x -Ofast -Wall -Wextra  -pedantic -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wcast-qual -Wstrict-overflow=5  -Werror -Wno-unused-parameter -Wformat=2 -D_FORTIFY_SOURCE=1
+CFLAGS = -std=gnu2x -Ofast -Wall -Wextra  -pedantic -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wcast-qual -Wstrict-overflow=5  -Werror -Wno-unused-parameter -Wformat=2
 LDFLAGS = -lvulkan -I../../include -I../../
 
 all: error.o | error.a
