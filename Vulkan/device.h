@@ -1,14 +1,23 @@
-#pragma once 
+#pragma once
 
 #include <vulkan/vulkan.h>
 
-VkResult pickPhysicalDevice(VkPhysicalDevice* physicalDevice, VkInstance instance, VkSurfaceKHR surface);
+#include <stdbool.h>
 
-VkResult createLogicalDevice(VkDevice* device, VkPhysicalDevice physicalDevice, VkQueue* graphicsQueue, VkQueue* presentQueue,VkSurfaceKHR surface);
+VkResult pickPhysicalDevice(VkPhysicalDevice *physicalDevice,
+                            VkInstance instance, VkSurfaceKHR surface);
 
-uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties, VkPhysicalDevice physicalDevice);
+VkResult createLogicalDevice(VkDevice *device, VkPhysicalDevice physicalDevice,
+                             VkQueue *graphicsQueue, VkQueue *presentQueue,
+                             VkSurfaceKHR surface);
 
-VkFormat findSupportedFormat(VkFormat* candidates, uint32_t candidateCount, VkImageTiling tiling, VkFormatFeatureFlags features, VkPhysicalDevice physicalDevice);
+uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties,
+                        VkPhysicalDevice physicalDevice);
+
+VkFormat findSupportedFormat(VkFormat *candidates, uint32_t candidateCount,
+                             VkImageTiling tiling,
+                             VkFormatFeatureFlags features,
+                             VkPhysicalDevice physicalDevice);
 
 VkFormat findDepthFormat(VkPhysicalDevice physicalDevice);
 

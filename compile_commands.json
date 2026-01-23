@@ -5,11 +5,11 @@
       "-c",
       "-std=gnu2x",
       "-Og",
-      "-D_FORTIFY_SOURCE=1",
       "-Iinclude",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -26,9 +26,9 @@
       "main.o",
       "main.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/main.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/main.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c",
+    "file": "/home/max/Documents/vulkan-tuto-c/main.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/main.o"
   },
   {
     "arguments": [
@@ -48,7 +48,6 @@
       "-Werror",
       "-Wno-unused-parameter",
       "-Wformat=2",
-      "-D_FORTIFY_SOURCE=1",
       "-I../../include",
       "-I../../",
       "-DDEBUG",
@@ -58,20 +57,20 @@
       "error.o",
       "error.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/Error",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/Error/error.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/Error/error.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan/Error",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/Error/error.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/Error/error.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -88,20 +87,20 @@
       "instance.o",
       "instance.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/instance.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/instance.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/instance.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/instance.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -118,20 +117,20 @@
       "extension.o",
       "extension.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/extension.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/extension.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/extension.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/extension.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -148,20 +147,20 @@
       "device.o",
       "device.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/device.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/device.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/device.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/device.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -178,20 +177,20 @@
       "queue.o",
       "queue.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/queue.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/queue.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/queue.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/queue.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -208,20 +207,20 @@
       "surface.o",
       "surface.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/surface.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/surface.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/surface.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/surface.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -238,20 +237,20 @@
       "swapchain.o",
       "swapchain.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/swapchain.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/swapchain.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/swapchain.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/swapchain.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -268,20 +267,20 @@
       "imageview.o",
       "imageview.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/imageview.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/imageview.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/imageview.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/imageview.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -298,20 +297,20 @@
       "graphicspipeline.o",
       "graphicspipeline.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/graphicspipeline.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/graphicspipeline.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/graphicspipeline.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/graphicspipeline.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -328,20 +327,20 @@
       "shadermodule.o",
       "shadermodule.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/shadermodule.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/shadermodule.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/shadermodule.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/shadermodule.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -358,20 +357,20 @@
       "renderpass.o",
       "renderpass.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/renderpass.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/renderpass.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/renderpass.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/renderpass.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -388,20 +387,20 @@
       "framebuffer.o",
       "framebuffer.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/framebuffer.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/framebuffer.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/framebuffer.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/framebuffer.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -418,20 +417,20 @@
       "commandpool.o",
       "commandpool.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/commandpool.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/commandpool.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/commandpool.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/commandpool.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -448,20 +447,20 @@
       "commandbuffer.o",
       "commandbuffer.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/commandbuffer.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/commandbuffer.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/commandbuffer.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/commandbuffer.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -478,20 +477,20 @@
       "sync.o",
       "sync.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/sync.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/sync.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/sync.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/sync.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -508,20 +507,20 @@
       "buffer.o",
       "buffer.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/buffer.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/buffer.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/buffer.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/buffer.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -538,15 +537,14 @@
       "texture.o",
       "texture.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/texture.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/texture.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/texture.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/texture.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-DDEBUG",
       "-ggdb",
       "-Og",
@@ -555,15 +553,14 @@
       "image.o",
       "image.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/image.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/image.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/image.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/image.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-DDEBUG",
       "-ggdb",
       "-Og",
@@ -572,20 +569,20 @@
       "objloader.o",
       "objloader.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/objloader.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/objloader.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/objloader.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/objloader.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -602,20 +599,20 @@
       "model.o",
       "model.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/model.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/Vulkan/model.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/Vulkan",
+    "file": "/home/max/Documents/vulkan-tuto-c/Vulkan/model.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/Vulkan/model.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-c",
-      "-D_FORTIFY_SOURCE=3",
       "-I../include",
       "-I../",
       "-DDEBUG",
       "-ggdb",
       "-Og",
+      "-fpermissive",
       "-Wall",
       "-Wextra",
       "-pedantic",
@@ -632,8 +629,8 @@
       "binary.o",
       "binary.c"
     ],
-    "directory": "/var/home/idezu/Documents/vulkan-tuto-c/File",
-    "file": "/var/home/idezu/Documents/vulkan-tuto-c/File/binary.c",
-    "output": "/var/home/idezu/Documents/vulkan-tuto-c/File/binary.o"
+    "directory": "/home/max/Documents/vulkan-tuto-c/File",
+    "file": "/home/max/Documents/vulkan-tuto-c/File/binary.c",
+    "output": "/home/max/Documents/vulkan-tuto-c/File/binary.o"
   }
 ]

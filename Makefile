@@ -1,7 +1,7 @@
-CC?= gcc
+CC?= cc
 
 CFLAGS = -std=gnu2x -Og 
-WARNINGS = -Wall -Wextra -pedantic -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wcast-qual -Wstrict-overflow=5 -Wno-unused-parameter -Werror -Wformat=2
+WARNINGS = -fpermissive -Wall -Wextra -pedantic -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wcast-qual -Wstrict-overflow=5 -Wno-unused-parameter -Werror -Wformat=2
 LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi -Iinclude
 EXTRAFLAGS = -DDEBUG -ggdb -Og
 

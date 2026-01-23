@@ -1,8 +1,10 @@
-#include "commandpool.h"
-#include "Vulkan/queue.h"
-#include "debug.h"
+#include <debug.h>
 #include <vulkan/vk_platform.h>
 #include <vulkan/vulkan_core.h>
+
+#include "queue.h"
+
+#include "commandpool.h"
 
 VkResult createCommandPool(VkCommandPool *commandPool, VkDevice device,
                            VkPhysicalDevice physicaleDevice,
